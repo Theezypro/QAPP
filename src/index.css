@@ -1,13 +1,913 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+}
+html {
+  zoom: normal;
+  margin: 0%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "DM-sans", sans-serif;
+  margin: 0;
+}
+
+/* @media only screen and (max-width: 400px) {
+  .mac13,
+  .mac1 {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .mac13,
+  .mac1 {
+    width: 90%;
+    height: 90%;
+  } */
+/* } */
+
+.box-13,
+.box-1,
+.box-20,
+.box-6,
+.box-7,
+.box-17,
+.box-14,
+.box-8,
+.box-16,
+.box-9,
+.Login,
+.SignUp,
+.Otp,
+.ResetPassword,
+.NewPassword,
+.box-18,
+.box-15 {
+  /* width: 100%;
+  height: 100%; */
+
+  /* transform: rotate(-21.82deg); */
+  /* transform-origin: 0 0; */
+  background-color: #09354a;
+
+  display: flex;
+
+  justify-content: center;
+
+  background-image: linear-gradient(
+    to top left,
+    rgba(100, 191, 182, 0) 80%,
+    rgba(189, 240, 236, 0.489) 100%
+  );
+}
+
+.qapplogo {
+  display: flex;
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  align-items: center;
+  justify-items: center;
+  padding: 15px;
+  color: #235a74;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.box-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: inline-flex;
+  gap: 35px;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  height: 100%;
+  font-family: "DM sans", sans-serif;
+}
+
+.box-login-bank,
+.box-login-qapp {
+  height: 340px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  color: #f7f7f7;
+  font-family: "DM Sans" sans-serif;
+  align-items: center;
+
+  background: linear-gradient(
+    91deg,
+    rgba(196, 196, 196, 0.05) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  border-radius: 17px;
+  border: 2px rgba(137, 124, 124, 0.25) solid;
+  backdrop-filter: blur(8px);
+}
+
+.bank-logo {
+  width: 55px;
+  height: 52px;
+  align-items: center;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  justify-content: center;
+
+  padding: 15px;
+  border-radius: 15px;
+
+  background: linear-gradient(
+    100deg,
+    rgba(16.09, 63.45, 87.13, 0.52) 0%,
+    rgba(3, 33, 48, 0.52) 100%
+  );
+  border-radius: 14.64px;
+  border: 0.77px #235a74 solid;
+}
+
+.h2 {
+  text-align-last: center;
+  width: 300px;
+  font-family: "DM sans", sans-serif;
+  height: 40px;
+  color: #f7f7f7;
+  word-wrap: break-word;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.h1 {
+  justify-content: center;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  word-wrap: break-word;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 380px;
+  font-size: 10px;
+  font-weight: 100;
+  color: #f7f7f7;
+  margin-bottom: 30px;
+}
+
+.continue-btn {
+  margin-top: 0px;
+  background-color: #fc7620;
+  border-radius: 10px;
+  width: 290px;
+  height: 67px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #032130;
+  border: none;
+  cursor: pointer;
+}
+.continue-div {
+  margin-top: 35px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  height: 450px;
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 50px;
+  border-radius: 17px;
+  backdrop-filter: blur(8px);
+  border: 2px rgba(255, 255, 255, 0.25) solid;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0.234) 50%,
+    rgba(9, 53, 74, 0.55) 90%
+  );
+  color: #f7f7f7;
+  font-family: "DM sans", sans-serif;
+}
+
+.phone-email-btn {
+  display: inline-flex;
+  font-family: "DM sans", sans-serif;
+  background-color: #244554;
+  border-radius: 8px;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  color: white;
+  opacity: 0.8;
+  width: 290px;
+  font-size: 12px;
+  gap: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 28px;
+  font-weight: 100;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.h-2 {
+  margin-top: 20px;
+  font-size: large;
+}
+.email-btn {
+  background-color: #021c28;
+  color: #f7f7f7;
+  opacity: 0.9;
+  border-radius: 8px;
+  height: 28px;
+  width: 54%;
+  justify-content: center;
+  margin-right: -35px;
+  overflow: hidden;
+}
+
+.phone-email-btn,
+.email-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* .phone,
+.password {
+  width: 290px;
+  height: 80px;
+  background-color: #0b3d52;
+  border-radius: 8px;
+  color: #196589;
+  border: 8px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+} */
+.qapplogo1 {
+  margin-top: 40px;
+}
+
+.forgot-password {
+  color: #f7f7f7;
+  margin-left: 150px;
+  font-size: small;
+}
+.signin-div {
+  margin-top: 35px;
+}
+.sign-in {
+  background-color: #fc7620;
+  border-radius: 10px;
+  width: 290px;
+  height: 55px;
+  font-size: small;
+  color: #032130;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.no-account {
+  color: #f7f7f7;
+  margin-top: 15px;
+}
+.sign-up {
+  color: #fc7620;
+  font-weight: bold;
+}
+
+.otp-form {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  height: 380px;
+  align-items: center;
+  margin: 140px 100px 120px;
+  border-radius: 17px;
+  border: 2px rgba(255, 255, 255, 0.25) solid;
+  backdrop-filter: blur(8px);
+  background-image: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0.234) 50%,
+    rgba(9, 53, 74, 0.55) 90%
+  );
+  color: #f7f7f7;
+  font-family: "DM sans", sans-serif;
+}
+
+.otp-verification {
+  margin-top: 40px;
+  margin-bottom: 45px;
+  font-family: "DM sans", sans-serif;
+}
+
+.phone-verification {
+  color: #f7f7f7;
+  font-size: 13px;
+  width: 290px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.input-code {
+  width: 290px;
+  height: 11%;
+  background-color: #0b3d52;
+  border-radius: 8px;
+  color: #196589;
+  border: 2px;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.enter-code {
+  font-size: 10px;
+  text-align: left;
+  color: #f7f7f7;
+  width: 290px;
+  margin-bottom: 5px;
+}
+
+.material-symbols-outlined {
+  background-color: #02121b;
+  border-radius: 2px;
+  /* border: 2px rgba(113, 101, 227, 0.29) solid;*/
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  height: 520px;
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 30px;
+  border-radius: 17px;
+  backdrop-filter: blur(8px);
+  border: 2px rgba(255, 255, 255, 0.25) solid;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0.234) 50%,
+    rgba(9, 53, 74, 0.55) 90%
+  );
+  color: #f7f7f7;
+}
+
+.first-name,
+.last-name,
+.email-address,
+.password,
+.confirm-password,
+.referral-code,
+.select-bank,
+.account-number,
+.new-password {
+  width: 290px;
+  height: 40px;
+  background-color: #063549;
+  border-radius: 11px;
+  color: #196589;
+  border: 10px;
+  padding-left: 20px;
+  margin-bottom: 7px;
+}
+.first-name {
+  margin-top: 30px;
+}
+
+.terms {
+  width: 290px;
+  display: flex;
+  gap: 10px;
+  color: white;
+  font-size: 13px;
+  padding-left: 5px;
+  margin-bottom: -15px;
+}
+
+.checkbox {
+  background-color: #032130;
+  border-radius: 2px;
+  fill: #021c28;
+  border: 2px rgba(113, 101, 227, 0.29) solid;
+}
+.continue {
+  height: 58px;
+}
+
+.otp-form2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b3d52;
+  width: 410px;
+  height: 420px;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 90px;
+  border-radius: 17px;
+  border: 2px rgba(255, 255, 255, 0.25) solid;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0.234) 50%,
+    rgba(9, 53, 74, 0.55) 90%
+  );
+  color: #f7f7f7;
+}
+
+.v-2 {
+  margin-top: 50px;
+}
+
+.ec-2 {
+  margin-bottom: 15px;
+}
+
+.blank-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b3d52;
+  width: 350px;
+  height: 420px;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 90px;
+  border-radius: 17px;
+  border: 2px rgba(255, 255, 255, 0.25) solid;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0.234) 50%,
+    rgba(9, 53, 74, 0.55) 90%
+  );
+  color: #f7f7f7;
+}
+
+.click-anywhere {
+  font-size: 28px;
+  text-align: center;
+  justify-content: center;
+  width: 260px;
+  padding-top: 120px;
+}
+.link {
+  text-decoration: none;
+}
+
+.forgot-password-form,
+.new-password-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b3d52;
+  width: 410px;
+  height: 440px;
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 90px;
+  border-radius: 17px;
+  border: 2px rgba(255, 255, 255, 0.25) solid;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0.234) 50%,
+    rgba(9, 53, 74, 0.55) 90%
+  );
+  color: #f7f7f7;
+}
+
+.Reset-password-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b3d52;
+  width: 410px;
+  height: 370px;
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 90px;
+  border-radius: 17px;
+  border: 2px rgba(255, 255, 255, 0.25) solid;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0.234) 50%,
+    rgba(9, 53, 74, 0.55) 90%
+  );
+  color: #f7f7f7;
+}
+
+.reset-password {
+  width: 290px;
+  font-size: 12px;
+  padding-top: 10px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.or {
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+.forget-p {
+  margin-top: 25px;
+}
+
+.continue-b {
+  margin-top: 15px;
+}
+
+.banklogin-header {
+  margin-bottom: 20px;
+}
+
+.s-b,
+.a-n {
+  margin-bottom: 15px;
+}
+
+.new-p {
+  margin-bottom: -5px;
+}
+.r-p {
+  width: 240px;
+}
+
+.character1 {
+  font-size: 10px;
+  text-align: left;
+  width: 290px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+}
+.n-p,
+.c-p {
+  width: 290px;
+  height: 45px;
+  background-color: #063549;
+  border-radius: 11px;
+  color: #196589;
+  border: 10px;
+  padding-left: 20px;
+  margin-bottom: 7px;
+}
+
+.new-password-form2 {
+  height: 450px;
+}
+
+.phone {
+  width: 290px;
+  height: 40px;
+  background-color: #063549;
+  border-radius: 11px;
+  color: white;
+  border: 10px;
+  padding-left: 20px;
+  margin-bottom: 7px;
+}
+
+.home {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #09354a;
+
+  background-image: linear-gradient(
+    to top left,
+    rgba(100, 191, 182, 0) 80%,
+    rgba(189, 240, 236, 0.489) 100%
+  );
+  color: #f7f7f7;
+}
+
+/* .home {
+  backgroundImage: `url(${"./images/background-image.jpg"}) `;
+} */
+
+.home-menu,
+.feature-menu,
+.request-menu,
+.account-menu {
+  cursor: pointer;
+}
+.feature-link,
+.request-link,
+.account-link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  height: 80px;
+  font-size: 20px;
+  margin-left: 250px;
+}
+
+.menu {
+  display: inline-flex;
+  margin-top: 30px;
+  margin-right: 300px;
+  height: 50px;
+  align-items: center;
+}
+
+.right-menu {
+  display: flex;
+
+  margin-top: 30px;
+  justify-content: right;
+  height: 50px;
+  align-items: center;
+}
+
+.input-lang {
+  width: 25px;
+  margin-right: 5px;
+  background-color: #032130;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.down-arrow {
+  display: flex;
+  width: 15px;
+  margin-right: 40px;
+  background-color: #02121b;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.home-menu {
+  color: #ff6501;
+}
+
+.top-section {
+  width: 1050px;
+  height: 580px;
+  background-image: linear-gradient(
+    91deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(250.75, 250.75, 250.75, 0.17) 100%
+  );
+  border-radius: 86px;
+  border: 2px solid #4b6c6b;
+  backdrop-filter: blur(26px);
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+.top-left-section {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+/* .multiple-service {
+  justify-content: center;
+} */
+
+.home-qapplogo {
+  display: flex;
+  justify-content: left;
+}
+
+.multiple-service {
+  font-weight: bolder;
+  font-size: 72px;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.seamless-uni {
+  font-size: 28px;
+  font-weight: 100;
+  width: 450px;
+  word-wrap: break-word;
+  margin-top: 0px;
+}
+.top-right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.network-logo {
+  width: 150px;
+  height: 150px;
+  transform: rotate(-5.08deg);
+  transform-origin: 0 0;
+
+  /* mix-blend-mode: screen; */
+  display: flex;
+  margin-left: 350px;
+  margin-top: -50px;
+  margin-bottom: 0px;
+}
+
+.hand-image {
+  width: 680px;
+  height: 850px;
+  transform: rotate(2.62deg);
+  transform-origin: 0 0;
+  box-shadow: 0px 35px 43px rgba(0, 0, 0, 0.19);
+  display: flex;
+  margin-top: -140px;
+  margin-left: 20px;
+}
+
+.download-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "DM sans" sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  color: #0fcac8;
+
+  width: 100%;
+  height: 320px;
+  background: linear-gradient(125deg, #062837 9%, #06444d 100%);
+  margin-top: 90px;
+}
+
+.download-logos {
+  display: flex;
+  flex-direction: row;
+  width: 530px;
+  height: 140px;
+  background-image: linear-gradient(
+    91deg,
+    rgba(196, 196, 196, 0.05) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  border-radius: 17px;
+  border: 2px rgba(255, 255, 255, 0.25) solid;
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.appstore-download,
+.playstore-download {
+  height: 70px;
+  cursor: pointer;
+}
+
+.information-section {
+  width: 100%;
+  height: 550px;
+  background: #063043;
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.financial-institutions,
+.merchant-services,
+.consumer-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 35px;
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(
+    91deg,
+    rgba(196, 196, 196, 0.19) 0%,
+    rgba(255, 255, 255, 0.23) 100%
+  );
+  border-radius: 50px;
+  border: 2px #577c7b solid;
+  backdrop-filter: blur(8px);
+  font-family: "DM sans" sans-serif;
+}
+
+.finance-container,
+.merchant-container,
+.consumer-container {
+  width: 60px;
+  height: 55px;
+  background: linear-gradient(
+    100deg,
+    rgba(16.09, 63.45, 87.13, 0.52) 0%,
+    rgba(3, 33, 48, 0.52) 100%
+  );
+  border-radius: 14.64px;
+  border: 0.77px #235a74 solid;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.finance-title,
+.merchant-title,
+.consumer-title {
+  font-family: "DM sans" sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.finance-info,
+.merchant-info,
+.consumer-info {
+  font-family: "DM sans" sans-serif;
+  text-align: center;
+  font-weight: 100;
+  font-size: 15px;
+  margin-top: 0;
+  line-height: 1.3;
+}
+
+.arrow-down1 {
+  display: flex;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.arrow-down2 {
+  display: flex;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.arrow-down3 {
+  display: flex;
+  margin-top: 90px;
+  cursor: pointer;
+}
+
+.partnership {
+  width: 1050px;
+  height: 350px;
+  background: linear-gradient(
+    91deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(250.75, 250.75, 250.75, 0.17) 100%
+  );
+  border-radius: 86px;
+  border: 2px #577c7b solid;
+  backdrop-filter: blur(26px);
+
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  align-items: center;
+}
+
+.partner-title {
+  font-size: 35px;
+  font-weight: 700;
+  word-wrap: break-word;
+  color: F2F2F2;
+  margin-top: 70px;
+  margin-bottom: 45px;
+}
+
+.partnership-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.ecobank-logo,
+.fasyl-logo,
+.sg-logo,
+.folixx-logo {
+  cursor: pointer;
+}
+
+.footer {
+  background: #063043;
+  height: 250px;
+  color: white;
+  font-size: 29px;
+  font-family: "Poppins" sans-serif;
+  font-weight: bold;
+  line-height: 22px;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.footer > ul {
+  cursor: pointer;
 }
