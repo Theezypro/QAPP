@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/QAPP/static/css/main.9828ae2f.css",
+    "main.js": "/QAPP/static/js/main.61937255.js",
+    "static/js/787.ed9c2098.chunk.js": "/QAPP/static/js/787.ed9c2098.chunk.js",
+    "static/media/background-image.png": "/QAPP/static/media/background-image.01b16ea7d90403939132.png",
+    "static/media/hand-image.png": "/QAPP/static/media/hand-image.553d2ff271db6ef4c050.png",
+    "static/media/Network-logo.png": "/QAPP/static/media/Network-logo.3ba12f94a9272cac3ad8.png",
+    "index.html": "/QAPP/index.html",
+    "main.9828ae2f.css.map": "/QAPP/static/css/main.9828ae2f.css.map",
+    "main.61937255.js.map": "/QAPP/static/js/main.61937255.js.map",
+    "787.ed9c2098.chunk.js.map": "/QAPP/static/js/787.ed9c2098.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9828ae2f.css",
+    "static/js/main.61937255.js"
+  ]
+}
