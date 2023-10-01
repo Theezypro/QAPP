@@ -1,5 +1,4 @@
 import "./App.css";
-import Header from "./Header";
 import Imac13 from "./Imac13";
 import Imac1 from "./Imac1";
 import Imac20 from "./Imac20";

@@ -2,30 +2,20 @@
   box-sizing: border-box;
 }
 html {
-  zoom: normal;
+  /* zoom: 100%; */
   margin: 0%;
+  font-size: 62.5%;
 }
 
 body {
   font-family: "DM-sans", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
-
 /* @media only screen and (max-width: 400px) {
-  .mac13,
-  .mac1 {
-    width: 90%;
-    height: 90%;
-  }
-}
-
-@media only screen and (max-width: 200px) {
-  .mac13,
-  .mac1 {
-    width: 90%;
-    height: 90%;
+  .home {
+  height: 825p
   } */
-/* } */
 
 .box-13,
 .box-1,
@@ -570,7 +560,7 @@ body {
 }
 
 .home {
-  margin: 0;
+  /* margin: 0; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -866,7 +856,7 @@ body {
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-left: 150px;
   align-items: center;
 }
 
@@ -910,4 +900,22 @@ body {
 
 .footer > ul {
   cursor: pointer;
+}
+
+/* @media only screen and (max-width: 400px) {
+  .home {
+  height: 825p
+  }  */
+
+@media (max-width: 768px) {
+  /* Your CSS styles for screens with a max width of 768px or less go here */
+  body {
+    background-color: blue;
+  }
+  .top-section{
+    
+  }
+  /* .home {
+      width: 90%;
+    } */
 }

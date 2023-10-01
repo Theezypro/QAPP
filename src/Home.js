@@ -23,8 +23,10 @@ export default function Home() {
   const background = {
     backgroundImage: `url(${homeBackground})`,
     backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
   };
   return (
+    
     <div className="home" style={background}>
       <nav className="navbar">
         <div className="menu">
