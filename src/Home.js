@@ -26,7 +26,6 @@ export default function Home() {
     backgroundRepeat: "no-repeat",
   };
   return (
-    
     <div className="home" style={background}>
       <nav className="navbar">
         <div className="menu">
